@@ -206,6 +206,7 @@ export const HARDWARE: HardwareItem[] = [
   // Other CPUs
   hw('amd-ryzen-9-9950x', 'cpu', 'AMD', 'Ryzen 9 9950X', { cores: 16, threads: 32, boostGhz: 5.7, tdpW: 170, platform: 'Zen 5' }, '2024-08-15', 'Ryzen 9000'),
   hw('amd-ryzen-7-9800x3d', 'cpu', 'AMD', 'Ryzen 7 9800X3D', { cores: 8, threads: 16, boostGhz: 5.2, tdpW: 120, platform: 'Zen 5' }, '2024-11-07', 'Ryzen 9000'),
+  hw('amd-ryzen-5-7600x', 'cpu', 'AMD', 'Ryzen 5 7600X', { cores: 6, threads: 12, boostGhz: 5.3, tdpW: 105, platform: 'Zen 4' }, '2022-09-27', 'Ryzen 7000', ['amd-radeon-graphics-raphael']),
   hw('apple-m4-max', 'cpu', 'Apple', 'M4 Max (16-core)', { cores: 16, threads: 16, boostGhz: 4.5, tdpW: 90, platform: 'Apple silicon' }, '2024-10-30', 'M4', ['apple-m4-max-gpu-40c']),
   // Intel discrete GPUs
   hw('intel-arc-pro-b70', 'gpu', 'Intel', 'Arc Pro B70', { vramGb: 32, memoryType: 'GDDR6', xeCores: 32, tdpW: 240 }, '2026-03-10', 'Arc Pro B'),
@@ -220,6 +221,7 @@ export const HARDWARE: HardwareItem[] = [
   hw('nvidia-geforce-rtx-5090', 'gpu', 'NVIDIA', 'GeForce RTX 5090', { vramGb: 32, memoryType: 'GDDR7', tdpW: 575 }, '2025-01-30', 'GeForce 50'),
   hw('nvidia-geforce-rtx-4090', 'gpu', 'NVIDIA', 'GeForce RTX 4090', { vramGb: 24, memoryType: 'GDDR6X', tdpW: 450 }, '2022-10-12', 'GeForce 40'),
   hw('nvidia-geforce-rtx-3090', 'gpu', 'NVIDIA', 'GeForce RTX 3090', { vramGb: 24, memoryType: 'GDDR6X', tdpW: 350 }, '2020-09-24', 'GeForce 30'),
+  hw('nvidia-geforce-gtx-1660-ti', 'gpu', 'NVIDIA', 'GeForce GTX 1660 Ti', { vramGb: 6, memoryType: 'GDDR6', tdpW: 120 }, '2019-02-22', 'GeForce 16'),
   hw('nvidia-rtx-pro-6000-blackwell', 'gpu', 'NVIDIA', 'RTX PRO 6000 Blackwell', { vramGb: 96, memoryType: 'GDDR7', tdpW: 600 }, '2025-03-18', 'RTX PRO'),
   hw('amd-radeon-rx-7900-xtx', 'gpu', 'AMD', 'Radeon RX 7900 XTX', { vramGb: 24, memoryType: 'GDDR6', tdpW: 355 }, '2022-12-13', 'Radeon 7000'),
   // Integrated GPUs
@@ -229,6 +231,7 @@ export const HARDWARE: HardwareItem[] = [
   hw('intel-arc-graphics-meteor-lake', 'igpu', 'Intel', 'Arc Graphics (Meteor Lake)', { xeCores: 8, platform: 'Meteor Lake', architecture: 'Xe-LPG' }, '2023-12-14', 'Arc'),
   hw('intel-arc-b390', 'igpu', 'Intel', 'Arc B390', { xeCores: 12, platform: 'Panther Lake', architecture: 'Xe3' }, '2026-01-05', 'Arc B'),
   hw('intel-uhd-770', 'igpu', 'Intel', 'UHD Graphics 770', { euCount: 32, platform: 'Alder / Raptor Lake', architecture: 'Xe-LP' }, '2021-11-04', 'UHD'),
+  hw('amd-radeon-graphics-raphael', 'igpu', 'AMD', 'Radeon Graphics (Raphael)', { cores: 2, platform: 'Zen 4', architecture: 'RDNA 2' }, '2022-09-27', 'Radeon Graphics'),
   hw('apple-m4-max-gpu-40c', 'igpu', 'Apple', 'M4 Max GPU (40-core)', { cores: 40, platform: 'Apple silicon' }, '2024-10-30', 'M4'),
   // NPUs
   hw('intel-ai-boost-npu-3', 'npu', 'Intel', 'AI Boost NPU (Meteor Lake)', { tops: 11, platform: 'Meteor Lake' }, '2023-12-14', 'AI Boost'),
